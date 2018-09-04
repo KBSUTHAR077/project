@@ -1,66 +1,67 @@
 # project
-E-Library Management System Project
-Project on Java Programming Language..
-In this Project we use Core Java , Servelt and Java Server Pages (JSP).
-Database is SQL Yog Server.
-Client Side Programming Language Javascript's plugin JQuery in widely used 
-Integrated Development Environment (IDE) Tool Eclipse Mars..
+    E-Library Management System Project
+    Project on Java Programming Language..
+    In this Project we use Core Java , Servelt and Java Server Pages (JSP).
+    Database is SQL Yog Server.
+    Client Side Programming Language Javascript's plugin JQuery in widely used 
+    Integrated Development Environment (IDE) Tool Eclipse Mars..
 
 -------------------------------------------------------------------------------------------------------------------------------------
 # Vision
     A library management software where admin can add/view/delete librarian and librarian can add/view books, issue, view issued books and return books.
 ----------------------------------------------------------------------------------------------------------------------------------------
 # Functional Requirements
-1. Admin
-Can add/edit/view/delete librarian
-Can logout
-2. Librarian
-Can add/edit/delete/view books
-Can issue books
-View issued books
-Return Books
-Can logout
+    1. Admin
+    Can add/edit/view/delete librarian
+    Can logout
+    2. Librarian
+    Can add/edit/delete/view books
+    Can issue books
+    View issued books
+    Return Books
+    Can logout
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 # Tools to be used
-Use any IDE to develop the project. It may be Eclipse /Myeclipse / Netbeans etc.
-Oracle/MySQL for the database.
+    Use any IDE to develop the project. It may be Eclipse /Myeclipse / Netbeans etc.
+    Oracle/MySQL for the database.
 
 # Front End and Back End
-Front End: Servlet, HTML, CSS, Bootstrap
-Back End: Oracle
+     Front End: Servlet, HTML, CSS, Bootstrap
+     Back End: SQLYog
+
 ----------------------------------------------------------------------------------------------------------------------------------------
 # Table Stracture is..
-CREATE TABLE  "E_BOOK" 
-   (	"CALLNO" VARCHAR2(4000), 
+     CREATE TABLE  "E_BOOK" 
+       (	"CALLNO" VARCHAR2(4000), 
 	"NAME" VARCHAR2(4000), 
 	"AUTHOR" VARCHAR2(4000), 
 	"PUBLISHER" VARCHAR2(4000), 
 	"QUANTITY" NUMBER, 
 	"ISSUED" NUMBER, 
 	 CONSTRAINT "E_BOOK_PK" PRIMARY KEY ("CALLNO") ENABLE
-   )
-/
-CREATE TABLE  "E_LIBRARIAN" 
-   (	"ID" NUMBER, 
-	"NAME" VARCHAR2(4000), 
+       )
+      /
+            CREATE TABLE  "E_LIBRARIAN" 
+        (	"ID" NUMBER, 
+	 "NAME" VARCHAR2(4000), 
 	"PASSWORD" VARCHAR2(4000), 
 	"EMAIL" VARCHAR2(4000), 
 	"MOBILE" NUMBER, 
 	 CONSTRAINT "E_LIBRARIAN_PK" PRIMARY KEY ("ID") ENABLE
-   )
-/
-Note: ID must be generated through sequence in E_LIBRARIAN table.
+      )
+      /
+     Note: ID must be generated through sequence in E_LIBRARIAN table.
 
-CREATE TABLE  "E_ISSUEBOOK" 
-   (	"CALLNO" VARCHAR2(4000) NOT NULL ENABLE, 
-	"STUDENTID" VARCHAR2(4000) NOT NULL ENABLE, 
+     CREATE TABLE  "E_ISSUEBOOK" 
+       (	"CALLNO" VARCHAR2(4000) NOT NULL ENABLE, 
+	  "STUDENTID" VARCHAR2(4000) NOT NULL ENABLE, 
 	"STUDENTNAME" VARCHAR2(4000), 
 	"STUDENTMOBILE" NUMBER, 
 	"ISSUEDDATE" DATE, 
 	"RETURNSTATUS" VARCHAR2(4000)
-   )
-/
+     )
+   /
 # How to run Project
 # Welcome Page
 ![screenshot 35](https://user-images.githubusercontent.com/42708591/45014054-d866af00-b03a-11e8-86e3-183f7758f75e.png)
