@@ -6,8 +6,31 @@ Database is SQL Yog Server.
 Client Side Programming Language Javascript's plugin JQuery in widely used 
 Integrated Development Environment (IDE) Tool Eclipse Mars..
 
+-------------------------------------------------------------------------------------------------------------------------------------
+# Vision
+    A library management software where admin can add/view/delete librarian and librarian can add/view books, issue, view issued books and return books.
+----------------------------------------------------------------------------------------------------------------------------------------
+# Functional Requirements
+1. Admin
+Can add/edit/view/delete librarian
+Can logout
+2. Librarian
+Can add/edit/delete/view books
+Can issue books
+View issued books
+Return Books
+Can logout
 
-#Table Stracture is..
+---------------------------------------------------------------------------------------------------------------------------------------
+# Tools to be used
+Use any IDE to develop the project. It may be Eclipse /Myeclipse / Netbeans etc.
+Oracle/MySQL for the database.
+
+# Front End and Back End
+Front End: Servlet, HTML, CSS, Bootstrap
+Back End: Oracle
+----------------------------------------------------------------------------------------------------------------------------------------
+# Table Stracture is..
 CREATE TABLE  "E_BOOK" 
    (	"CALLNO" VARCHAR2(4000), 
 	"NAME" VARCHAR2(4000), 
