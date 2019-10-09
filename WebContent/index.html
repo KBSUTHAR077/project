@@ -4,6 +4,7 @@
 <meta charset="ISO-8859-1">
 <title>e-Library</title>
 <link rel="stylesheet" href="bootstrap.min.css"/>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
 <nav class="navbar navbar-inverse">
@@ -33,9 +34,10 @@
 
 <div class="container-fluid">
 <h1>eLibrary</h1>
-
 <div class="row">
+  <div class="w3-panel w3-card w3-pale-blue" style="width: 500px; height: 600px; float: left; overflow: hidden;">
   <div class="col-md-6">
+  <img src="images/admin.png" width="300px" height="300px">
   <h3>Admin Login</h3>
   <form action="AdminLogin" method="post" style="width:300px">
   <div class="form-group">
@@ -47,10 +49,12 @@
     <input type="password" class="form-control" name="password" id="password1" placeholder="Password"/>
   </div>  
   <button type="submit" class="btn btn-primary">Login</button>
-</form>
-  
+  </form>
   </div>
+  </div>
+  <div class="w3-panel w3-card w3-pale-green" style="width: 500px; height: 600px; overflow:hidden;">
   <div class="col-md-6">
+  <img src="images/librarian.png" width="300px" height="300px">
   <h3>Librarian Login</h3>
   <form action="LibrarianLogin" method="post" style="width:300px">
   <div class="form-group">
@@ -63,6 +67,7 @@
   </div>  
   <button type="submit" class="btn btn-primary">Login</button>
 </form>
+</div>
 </div>
   </div>
 </div>
